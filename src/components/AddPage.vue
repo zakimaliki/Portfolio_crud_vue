@@ -231,8 +231,6 @@ export default {
           imageSkillKeenam: this.biodata[0].imageSkillKetiga,
         })
         .then(() => {
-          alert("data berhasil ditambah");
-          this.$router.push('/')
           })
         .catch(() => {
           alert("data gagal ditambah");
