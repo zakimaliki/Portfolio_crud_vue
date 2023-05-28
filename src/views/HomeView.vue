@@ -242,7 +242,7 @@ export default {
   },
   created() {
     axios
-      .get("http://localhost:3000/biodata")
+      .get("https://template-be-json-baru.vercel.app/biodata")
       .then((biodata) => {
         this.biodata = biodata.data;
       })

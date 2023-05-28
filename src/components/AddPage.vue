@@ -197,7 +197,7 @@ export default {
   },
   created() {
     axios
-      .get("http://localhost:3000/biodata")
+      .get("https://template-be-json-baru.vercel.app/biodata")
       .then((biodata) => {
         this.biodata = biodata.data;
       })
@@ -208,7 +208,7 @@ export default {
   methods: {
     createData() {
       axios
-        .put("http://localhost:3000/biodata/1", {
+        .put("https://template-be-json-baru.vercel.app/biodata/1", {
           rolePertama: this.biodata[0].rolePertama,
           roleKedua: this.biodata[0].roleKedua,
           roleKetiga: this.biodata[0].roleKetiga,
